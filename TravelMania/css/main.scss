@@ -1,0 +1,24 @@
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 70px; 
+    right: 50px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background: #000;
+    color: white; 
+    cursor: pointer; 
+    padding: 10px; 
+    font-size: 18px; 
+    border-radius: 2px;
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(117, 175, 202); /* Add a dark-grey background on hover */
+  }
+
+  a,p{
+    font-family: Raleway;
+  }

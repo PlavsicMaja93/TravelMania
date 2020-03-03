@@ -1,0 +1,256 @@
+.news{
+    display: block;
+    position: relative;
+    top: 85px;
+    width: 955px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    .container h2{
+        width: 50%;
+        font-size: 25px;
+        font-weight: bold;
+        position: relative;
+        margin: auto;
+        margin-top: -20px;
+        padding-bottom: 5px;
+        border-bottom: 3px solid rgb(64, 184, 231) ;
+
+        @media (max-width: 997px) {
+            font-size: 20px;
+        }
+        
+        
+        }
+
+    .container{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Raleway;
+        text-transform: uppercase;
+
+
+
+        .grid-container {
+            display: grid;
+            position: relative;
+            margin: auto;
+            right: 14px;
+            width: 955px;
+            grid-template-columns: auto auto;
+            grid-template-areas: 
+                  'news1 news2 news2'
+                  'news3 news3 news4';
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+
+
+           @media (max-width: 997px) {
+            width: 500px;
+            right: 0;
+            grid-template-columns: auto;
+            grid-template-areas: 
+                  'news1'
+                  'news2'
+                  'news3'
+                  'news4';
+            grid-column-gap: 40px;
+                }
+
+            .grid-item1{
+                position: relative;
+                background-color: lightblue;
+                grid-area: news1;
+                height: 300px;
+                background-image: url("../img/new.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                box-shadow:  1px 1px 10px 5px #000;
+
+
+                .ribbon-wrapper {
+                    width: 80px;
+                    height: 90px;
+                    overflow: hidden;
+                    position: absolute;
+                    left: 211px;
+                    top: 0px;
+                    .ribbon {
+                      font: bold 15px sans-serif;
+                      color: #333;
+                      text-align: center;
+                      -webkit-transform: rotate(45deg);
+                      -moz-transform:    rotate(-45deg);
+                      -ms-transform:     rotate(-45deg);
+                      -o-transform:      rotate(-45deg);
+                      position: relative;
+                      padding: 7px 0;
+                      top: 15px;
+                      left: -7px;
+                      width: 120px;
+                      background-color: #ebb134;
+                      color: #fff;
+
+                      @media (max-width: 997px) {
+                        font-size: 12px;
+                    }
+
+                  }
+
+                  @media (max-width: 997px) {
+                    left: 420px;
+                  }
+                }
+
+                  .bottom-left {
+                    position: absolute;
+                    bottom: 5px;
+                    left: -5px;
+                    padding: 10px;
+                    font-family: Raleway;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #000;
+                    background: #fff;
+                    border-radius: 2px;
+
+                     &:hover{
+                        color: #fff;
+                        background: #000;
+                     }
+
+                     @media (max-width: 997px) {
+                        font-size: 12px;
+                    }
+
+                  }
+                  
+            }
+
+
+            .grid-item2{
+                position: relative;
+                background-color: lightblue;
+                grid-area: news2;
+                height: 300px;
+                background: #f0f0f0;
+                text-align: center;
+
+                .journey{
+                    position: absolute;
+                    color: rgb(64, 184, 231);
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 18px;
+                    text-transform: none;
+
+                    @media (max-width: 997px) {
+                        font-size: 16px;
+                    }
+
+                }
+
+                .bottom-left {
+                    position: absolute;
+                    bottom: 5px;
+                    left: -5px;
+                    padding: 10px;
+                    font-family: Raleway;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #000;
+                    background: rgb(174, 222, 241);
+                    border-radius: 2px;
+                    border:  2px solid #000;
+
+                    &:hover{
+                        color: #fff;
+                        background: #000;
+                     }
+
+                     @media (max-width: 997px) {
+                        font-size: 12px;
+                    }
+
+                  }
+            }
+
+            .grid-item3{
+                position: relative;
+                background-color: lightblue;
+                grid-area: news3;
+                height: 300px;
+                background-image: url("../img/food.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                .bottom-left {
+                    position: absolute;
+                    bottom: 5px;
+                    left: -5px;
+                    padding: 10px;
+                    font-family: Raleway;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #000;
+                    background: rgb(174, 222, 241);
+                    border-radius: 2px;
+                    border:  2px solid #000;
+
+                    &:hover{
+                        color: #fff;
+                        background: #000;
+                     }
+
+                     @media (max-width: 997px) {
+                        font-size: 12px;
+                    }
+
+                  }
+            }
+
+            .grid-item4{
+                position: relative;
+                background-color: lightblue;
+                grid-area: news4;
+                height: 300px;
+                background-image: url("../img/visa.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                box-shadow:  1px 1px 10px 5px #000;
+
+                .bottom-left {
+                    position: absolute;
+                    bottom: 5px;
+                    left: -5px;
+                    padding: 10px;
+                    font-family: Raleway;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #000;
+                    background: #fff;
+                    border-radius: 2px;
+
+                    &:hover{
+                        color: #fff;
+                        background: #000;
+                     }
+
+                     @media (max-width: 997px) {
+                        font-size: 12px;
+                    }
+
+                  }
+            }
+          }
+
+    }
+} 
